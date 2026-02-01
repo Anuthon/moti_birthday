@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moti’s Magical Birthday 🦄</title>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Poppins", "Comic Sans MS", cursive;
+    background: linear-gradient(180deg, #ffe6fa, #e6f7ff);
+    color: #444;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  section { padding: 50px 20px; }
+
+  /* HERO */
+  .hero {
+    height: 100vh;
+    background: url("5E03056C-2A46-44E2-8703-6C7BED238871.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-box {
+    background: rgba(255, 182, 213, 0.9);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+  h1 { font-size: 2.6rem; color: white; }
+  h2 { font-size: 1.3rem; color: white; margin-top: 10px; }
+  h3 { font-size: 2rem; color: #ff5fa2; margin-bottom: 25px; }
+
+  /* STORY */
+  .story {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
+
+  /* PHOTO STORY GRID */
+  .story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    max-width: 900px;
+    margin: auto;
+  }
+  .story-card {
+    background: white;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    transition: transform 0.3s;
+  }
+  .story-card img { width: 100%; border-radius: 16px; }
+  .story-card p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #ff5fa2;
+    font-weight: 600;
+  }
+  .story-card:active { transform: scale(1.08); }
+
+  /* HUG BUTTON */
+  .hug-btn {
+    background: linear-gradient(45deg, #ff7eb3, #ff65a3);
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    margin-top: 15px;
+  }
+
+  footer {
+    background: #ff5fa2;
+    color: white;
+    padding: 25px;
+    font-size: 1.1rem;
+  }
+
+  /* BALLOONS */
+  .balloon {
+    position: fixed;
+    bottom: -60px;
+    font-size: 30px;
+    cursor: pointer;
+    animation: float 7s linear infinite;
+  }
+  @keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-120vh); }
+  }
+
+  /* TAP TO START OVERLAY */
+  #startOverlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #ffe6fa, #e6f7ff);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #startOverlay h1 { font-size: 2.5rem; color: #ff5fa2; margin-bottom: 20px; }
+  #startOverlay p { font-size: 1.2rem; color: #ff5fa2; }
+</style>
+</head>
+
+<body>
+
+<!-- TAP TO START -->
+<div id="startOverlay">
+  <h1>🎉 Happy Birthday Moti! 🎉</h1>
+  <p>Tap anywhere to start the magic 🦄💖</p>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-box">
+    <h1>Happy Birthday Gungun 🎂</h1>
+    <h2>Our magical little Moti 🦄💖</h2>
+  </div>
+</div>
+
+<!-- STORYBOOK -->
+<section>
+  <h3>📖 Once Upon a Time…</h3>
+  <div class="story">
+    <p>Once upon a time, there was a tiny bundle of joy named <strong>Gungun</strong>.</p>
+    <p>Everyone lovingly called her <strong>Moti</strong> 💕 because she was the cutest little unicorn in the world 🦄.</p>
+    <p>Her smile made days brighter, her laughter filled homes with magic ✨.</p>
+    <p>And today, the whole world celebrates because it’s <strong>her birthday</strong> 🎉</p>
+  </div>
+</section>
+
+<!-- PHOTO STORY -->
+<section>
+  <h3>🌸 Pages from Moti’s Story</h3>
+  <div class="story-grid">
+    <div class="story-card"><img src="2B551FB3-D7DE-4C10-8640-4899DBAFE92D.jpg"><p>Sweet smile 😄</p></div>
+    <div class="story-card"><img src="2C29AAA5-2BF7-4953-BE37-8E53F1623AF4.jpg"><p>Moti magic 💖</p></div>
+    <div class="story-card"><img src="5DA2B14C-51F2-46C6-B92C-76ED1B3937DA.jpg"><p>Little unicorn 🦄</p></div>
+    <div class="story-card"><img src="5E03056C-2A46-44E2-8703-6C7BED238871.jpg"><p>Giggle queen ✨</p></div>
+    <div class="story-card"><img src="46FC7CC9-6109-41EF-A6F0-23DCC54F59D7.jpg"><p>Sunshine 🌸</p></div>
+    <div class="story-card"><img src="498EA399-CA45-4275-976E-8CCE619FD206.jpg"><p>Always happy 😊</p></div>
+    <div class="story-card"><img src="06354E80-2DAD-41EB-BF6D-A343CB6E7E20.jpg"><p>Our joy 🐣</p></div>
+    <div class="story-card"><img src="AC27599B-180F-4DDC-81DD-EF0592DE538E.jpg"><p>Too cute 🥰</p></div>
+    <div class="story-card"><img src="B01713C4-D398-45E6-B76D-6080B4F551A4.jpg"><p>Pure love ❤️</p></div>
+    <div class="story-card"><img src="C183F86E-2996-4F71-99A3-340D6F3BC697.jpg"><p>Little star ⭐</p></div>
+    <div class="story-card"><img src="C905319D-FC66-4B3E-BD26-B39D9CF9B5D3.jpg"><p>Angel 😇</p></div>
+    <div class="story-card"><img src="DCFD72E0-D7E5-4A53-A165-AB3BE65EDE93.jpg"><p>Moti forever 💞</p></div>
+    <div class="story-card"><img src="E0AF8296-F763-41D7-B3E7-F3F38CAB38CB.jpg"><p>Big smiles 😍</p></div>
+    <div class="story-card"><img src="F760518C-0222-4D25-83C7-E3FB6AC2FB1C.jpg"><p>Our heart ❤️</p></div>
+  </div>
+</section>
+
+<!-- HUG -->
+<section>
+  <h3>🤗 Click for a Hug</h3>
+  <button class="hug-btn" onclick="giveHug()">Click me 💕</button>
+</section>
+
+<footer>
+  Made for our Moti 🦄💖
+</footer>
+
+<!-- BALLOONS -->
+<div class="balloon" style="left:10%">🎈</div>
+<div class="balloon" style="left:30%">🎈</div>
+<div class="balloon" style="left:50%">🎈</div>
+<div class="balloon" style="left:70%">🎈</div>
+<div class="balloon" style="left:90%">🎈</div>
+
+<!-- SCRIPT -->
+<script>
+  const music = new Audio("music.mp3"); // <-- put your song here
+  music.loop = true;
+  music.volume = 0.5;
+
+  // Start everything after overlay tap
+  const overlay = document.getElementById("startOverlay");
+  overlay.addEventListener("click", () => {
+    overlay.style.display = "none";
+    music.play().catch(e => console.log("Music autoplay requires user interaction:", e));
+  });
+
+  // Hug button
+  function giveHug() {
+    alert("BIG SQUISHY HUG FOR MOTI 🤗💖\nYou are loved more than chocolates 🍫");
+  }
+
+  // Balloons
+  document.querySelectorAll(".balloon").forEach(balloon => {
+    balloon.addEventListener("click", () => { balloon.style.display = "none"; });
+  });
+</script>
+
+</body>
+</html>
+
+
+
